@@ -1,0 +1,629 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+ 
+ html,
+ body,
+ div,
+ span,
+ applet,
+ object,
+ iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ a,
+ abbr,
+ acronym,
+ address,
+ big,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ ins,
+ kbd,
+ q,
+ s,
+ samp,
+ small,
+ strike,
+ strong,
+ sub,
+ sup,
+ tt,
+ var,
+ b,
+ u,
+ i,
+ center,
+ dl,
+ dt,
+ dd,
+ ol,
+ ul,
+ li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td,
+ article,
+ aside,
+ canvas,
+ details,
+ embed,
+ figure,
+ figcaption,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ output,
+ ruby,
+ section,
+ summary,
+ time,
+ mark,
+ audio,
+ video {
+ 	margin: 0;
+ 	padding: 0;
+ 	border: 0;
+ 	font-size: 100%;
+ 	font: inherit;
+ 	vertical-align: baseline;
+ }
+input, button, submit { border:none; }
+ /* HTML5 display-role reset for older browsers */
+ 
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ section {
+ 	display: block;
+ }
+ 
+ body {
+ 	line-height: 1;
+ }
+ 
+ ol,
+ ul {
+ 	list-style: none;
+ }
+ 
+ blockquote,
+ q {
+ 	quotes: none;
+ }
+ 
+ blockquote:before,
+ blockquote:after,
+ q:before,
+ q:after {
+ 	content: '';
+ 	content: none;
+ }
+ 
+ table {
+ 	border-collapse: collapse;
+ 	border-spacing: 0;
+ }
+ /* Fonts */
+ 
+ @font-face {
+ 	font-family: Nexa_Bold;
+ 	src: url(fonts/Nexa_Bold.otf);
+ }
+ 
+ @font-face {
+ 	font-family: Nexa_Light;
+ 	src: url(fonts/Nexa_Light.otf);
+ }
+ 
+ @font-face {
+ 	font-family: Trans_Icons;
+ 	src: url(fonts/transavicon.ttf);
+ }
+
+ /* H1, H2, p en links */
+ 
+ a {
+ 	text-decoration: none;
+ 	color: #00D66C;
+ }
+ 
+ a:hover {
+ 	color: #2800A0;
+ }
+ 
+ body {
+ 	font-family: Nexa_Light;
+ }
+
+ svg {
+ 	width: 3em;
+ 	height: 3em;
+ 	margin: 0.5em;
+ 	border-radius: 10em;
+ 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+ }
+ 
+ li {
+ 	display: inline-flex;
+ 	justify-content: space-between;
+ }
+ 
+ .tab-list {
+ 	display: flex;
+ 	justify-content: center;
+ 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+ }
+ 
+ .header {
+ 	display: flex;
+ 	justify-content: space-between;
+   
+ }
+
+ 
+ 
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) {
+	.grid-container {
+ 	display: grid;
+ 	grid-template: repeat(6, [row] minmax(1fr)) / repeat(1, [col] 1fr);
+ 	grid-row-gap: 1px;
+ }
+	 .header { display:inline-block;
+
+ 	grid-row: row 1;
+ }
+ 
+ .nav { display:inline-block;
+ 	grid-row: row 2;
+ }
+ 
+ .main { display:inline-block;
+ 	grid-row: row 2 / span 4;
+ }
+ 
+ .section { display:inline-block;
+ 	grid-row: row 7 / span 10;
+ }
+	header {
+		width: 100%;
+		border-bottom-style: solid;
+ 	border-width: 3px;
+ 	border-color: #00D66C;
+		
+	}
+	 nav ul {
+ 	display: flex;
+ 	width: 100%;
+ 	height: 4.21em;
+ 	justify-content: center;
+		 
+ }
+	 nav { margin-left: -3.4em;
+		 display:flex;
+		 justify-content: space-around;
+ 	width: 100%;
+
+ }
+ 
+ nav li { text-align: center;
+	 font-size: 1.1em;
+ 	margin-top: 2.5em;
+	 
+ }
+	 header img {
+ 	position: relative;
+ 	left: 41vw;
+ 	width: 3em;
+ 	height: 3em;
+ 	margin: 0.5em;
+ 	border-radius: 10em;
+ 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+ }
+ 
+	header ul {
+ 	width: 100%;
+ 	height: 4.21em;
+ 	justify-content: space-around;
+ }
+	
+
+header {
+ 	display: flex;
+ 	width: 100%;
+ 	height: 4.21em;
+ 	font-family: Nexa_Bold;
+ 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+ }
+
+/* menu menu menu */
+
+.absolute-center, .menu, .menu .btn .fa, .menu .btn.trigger .line {
+  position: fixed;
+  top: 85%;
+  left: 25%;
+  transform: translateX(-50%) translateY(-50%);
+	  color: rgba(255, 255, 255, 1);
+	
+}
+.menu {
+  width: 5em;
+  height: 5em;
+  z-index: 99999;
+	border-radius: 50%;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.menu .btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 1);
+  opacity: 0;
+  z-index: -10;
+  cursor: pointer;
+  transition: opacity 1s, z-index 0.3s, transform 1s;
+  transform: translateX(0);
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.menu .btn .fa {
+  font-size: 3em;
+  transition: color 0.3s;
+}
+.menu .btn:hover .fa {
+  color: rgba(255, 255, 255, 0.7);
+}
+.menu .btn.trigger {
+  opacity: 1;
+  z-index: 100;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.menu .btn.trigger:hover {
+  transform: scale(1.2);
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.menu .btn.trigger:hover .line {
+  background-color: rgba(255, 255, 255, 1);
+}
+.menu .btn.trigger:hover .line:before, .menu .btn.trigger:hover .line:after {
+  background-color: rgba(255, 255, 255, 1);
+}
+.menu .btn.trigger .line {
+  position:absolute;
+  width: 60%;
+  height: 6px;
+  left: 2.5em;
+  top: 2.6em;
+  background:#fff;
+  border-radius: 6px;
+  transition: background-color 0.3s, height 0.3s, top 0.3s;
+}
+.menu .btn.trigger .line:before, .menu .btn.trigger .line:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #fff;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu .btn.trigger .line:before {
+  top: -12px;
+  transform-origin: 15% 100%;
+}
+.menu .btn.trigger .line:after {
+  top: 12px;
+  transform-origin: 25% 30%;
+}
+.menu .rotater {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 50%;
+}
+.menu.active .btn-icon {
+  opacity: 1;
+  z-index: 50;
+}
+.menu.active .trigger .line {
+  height: 0px;
+  top: 45%;
+}
+.menu.active .trigger .line:before {
+  transform: rotate(45deg);
+  width: 110%;
+}
+.menu.active .trigger .line:after {
+  transform: rotate(-45deg);
+  width: 110%;
+}
+
+.rotater:nth-child(1) {
+  transform: rotate(-22.5deg);
+}
+
+.menu.active .rotater:nth-child(1) .btn-icon {
+  transform: translateY(-10em) rotate(22.5deg);
+}
+
+.rotater:nth-child(2) {
+  transform: rotate(22.5deg);
+}
+
+.menu.active .rotater:nth-child(2) .btn-icon {
+  transform: translateY(-10em) rotate(-22.5deg);
+}
+
+.rotater:nth-child(3) {
+  transform: rotate(67.5deg);
+}
+
+.menu.active .rotater:nth-child(3) .btn-icon {
+  transform: translateY(-10em) rotate(-67.5deg);
+}
+
+.rotater:nth-child(4) {
+  transform: rotate(112.5deg);
+}
+
+.menu.active .rotater:nth-child(4) .btn-icon {
+  transform: translateY(-10em) rotate(-112.5deg);
+}
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+	.grid-container {
+ 	display: grid;
+ 	grid-template: repeat(6, [row] minmax(1fr)) / repeat(2, [col] 1fr);
+ 	grid-row-gap: 1px;
+ }
+ 
+.section {  position:relative;
+	margin-top: 1em;
+	display: flex;
+	justify-content: flex-start;
+	
+}
+.section h2 {
+	font-family: Nexa_Bold;
+	font-size: 1.2em;
+	position:relative;
+	width: 6em;
+}
+ .header { display:inline-block;
+ 	grid-column: col 1 / span 2;
+ 	grid-row: row 1;
+ }
+ 
+ 
+ .main { display:inline-block;
+ 	grid-column: col 1 / span 2;
+ 	grid-row: row 2 / span 3;
+ }
+	header {
+		width: 100%;
+		border-bottom-style: solid;
+ 	border-width: 3px;
+ 	border-color: #00D66C;
+		
+	}
+	 nav ul {
+ 	display: flex;
+ 	width: 100%;
+ 	height: 4.21em;
+ 	justify-content: center;
+		 
+ }
+	 nav { margin-left: -3.4em;
+		 display:flex;
+		 justify-content: space-around;
+ 	width: 100%;
+
+ }
+ 
+ nav li { text-align: center;
+	 font-size: 1.1em;
+ 	margin-top: 2.5em;
+	 
+ }
+	 header img {
+ 	position: relative;
+ 	left: 41vw;
+ 	width: 3em;
+ 	height: 3em;
+ 	margin: 0.5em;
+ 	border-radius: 10em;
+ 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+ }
+ 
+	header ul {
+ 	width: 100%;
+ 	height: 4.21em;
+ 	justify-content: space-around;
+ }
+	
+
+header {
+ 	display: flex;
+ 	width: 100%;
+ 	height: 4.21em;
+ 	font-family: Nexa_Bold;
+ 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+ }
+
+/* menu menu menu */
+
+.absolute-center, .menu, .menu .btn .fa, .menu .btn.trigger .line {
+  position: fixed;
+  top: 85%;
+  left: 15%;
+  transform: translateX(-50%) translateY(-50%);
+	  color: rgba(255, 255, 255, 1);
+}
+.menu {
+  width: 5em;
+  height: 5em;
+}
+.menu .btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 1);
+  opacity: 0;
+  z-index: -10;
+  cursor: pointer;
+  transition: opacity 1s, z-index 0.3s, transform 1s;
+  transform: translateX(0);
+}
+.menu .btn .fa {
+  font-size: 3em;
+  transition: color 0.3s;
+}
+.menu .btn:hover .fa {
+  color: rgba(255, 255, 255, 0.7);
+}
+.menu .btn.trigger {
+  opacity: 1;
+  z-index: 100;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.menu .btn.trigger:hover {
+  transform: scale(1.2);
+}
+.menu .btn.trigger:hover .line {
+  background-color: rgba(255, 255, 255, 1);
+}
+.menu .btn.trigger:hover .line:before, .menu .btn.trigger:hover .line:after {
+  background-color: rgba(255, 255, 255, 1);
+}
+.menu .btn.trigger .line {
+  position:absolute;
+  width: 60%;
+  height: 6px;
+  left: 2.5em;
+  top: 2.6em;
+  background: #fff;
+  border-radius: 6px;
+  transition: background-color 0.3s, height 0.3s, top 0.3s;
+}
+.menu .btn.trigger .line:before, .menu .btn.trigger .line:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #fff;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu .btn.trigger .line:before {
+  top: -12px;
+  transform-origin: 15% 100%;
+}
+.menu .btn.trigger .line:after {
+  top: 12px;
+  transform-origin: 25% 30%;
+}
+.menu .rotater {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 50%;
+}
+.menu.active .btn-icon {
+  opacity: 1;
+  z-index: 50;
+}
+.menu.active .trigger .line {
+  height: 0px;
+  top: 45%;
+}
+.menu.active .trigger .line:before {
+  transform: rotate(45deg);
+  width: 110%;
+}
+.menu.active .trigger .line:after {
+  transform: rotate(-45deg);
+  width: 110%;
+}
+
+.rotater:nth-child(1) {
+  transform: rotate(-22.5deg);
+}
+
+.menu.active .rotater:nth-child(1) .btn-icon {
+  transform: translateY(-10em) rotate(22.5deg);
+}
+
+.rotater:nth-child(2) {
+  transform: rotate(22.5deg);
+}
+
+.menu.active .rotater:nth-child(2) .btn-icon {
+  transform: translateY(-10em) rotate(-22.5deg);
+}
+
+.rotater:nth-child(3) {
+  transform: rotate(67.5deg);
+}
+
+.menu.active .rotater:nth-child(3) .btn-icon {
+  transform: translateY(-10em) rotate(-67.5deg);
+}
+
+.rotater:nth-child(4) {
+  transform: rotate(112.5deg);
+}
+
+.menu.active .rotater:nth-child(4) .btn-icon {
+  transform: translateY(-10em) rotate(-112.5deg);
+}
+}
