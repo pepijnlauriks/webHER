@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>99verhalen</title>
+	<title>Transavia</title>
 	<link rel="stylesheet" href="main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/png" href="favicon-192x192.png" />
@@ -11,311 +11,390 @@
 </head>
 
 <body>
-	<div class="grid-container">
-		<div class="header">
-			<!--dit zit in nav omdat ik deze navigatie belangrijker vindt dan de sidetab-->
-			<header>
-				<img src="images/Transavialogo.svg" alt="Transavia Logo">
-				<nav>
-					<ul>
-						<li><a href="Index.html">Ontdekken</a>
-						</li>
-						<li><a href="Index.html">Alle Verhalen</a>
-						</li>
-					</ul>
-				</nav>
-			</header>
+	<header>
+		<img src="images/Transavialogo.svg" alt="Transavia Logo">
+		<nav>
+			<ul>
+
+				<li><a href="Index.html">Ontdekken</a>
+				</li>
+				<li><a href="verhalen.html">Alle Verhalen</a>
+				</li>
+
+			</ul>
+		</nav>
+
+	</header>
+
+	<!--sidetab voor mijn menu items-->
+	<section class="sidebar Desktopnavigatie">
+		<ul class="tab-list">
+			<li class="active">
+				<a class="tab-control" href="#default"></a>
+			</li>
+			<li>
+				<a class="tab-control" href="#profiel">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.9 57.9">
+						<title> profiel</title>
+						<circle cx="28.9" cy="28.9" r="28.9" fill="#FFF" />
+						<path d="M36.8 10.4c4.8 2 8.7 5.9 10.7 10.7 2.1 5 2.1 10.7 0 15.7 -2 4.8-5.9 8.7-10.7 10.7 -5 2.1-10.7 2.1-15.7 0 -4.8-2-8.7-5.9-10.7-10.7 -2.1-5-2.1-10.7 0-15.7 2-4.8 5.9-8.7 10.7-10.7C26.1 8.3 31.8 8.3 36.8 10.4zM33 46c1.3-0.3 2.5-0.8 3.7-1.3 1.2-0.6 2.3-1.3 3.3-2.1 1-0.8 1.9-1.8 2.7-2.8 -0.2-0.1-0.4-0.3-0.7-0.4 -0.2-0.1-0.5-0.2-0.7-0.2l-6.5-1.8L31 41.2c-0.7 0.6-1.4 1.4-2 2.1l-5.9-6 -6.4 1.8c-0.3 0.1-0.5 0.2-0.7 0.3 -0.2 0.1-0.4 0.2-0.6 0.3 0.8 1 1.7 1.9 2.7 2.8 1 0.8 2.1 1.5 3.3 2.1 1.2 0.6 2.4 1 3.7 1.3 1.3 0.3 2.7 0.5 4 0.5C30.3 46.5 31.7 46.3 33 46zM23.5 18.3c-1.6 1.7-2.4 4.1-2 6.4 0.2 2.5 1 4.9 2.4 7 1.7 2.8 5.4 3.7 8.2 2 0.8-0.5 1.5-1.2 2-2 1.4-2.1 2.2-4.4 2.4-6.9 0.6-4.1-2.2-8-6.3-8.7C27.7 15.7 25.2 16.6 23.5 18.3L23.5 18.3z" fill="#00D66C" />
+					</svg>
+				</a>
+			</li>
+			<li>
+				<a class="tab-control" href="#zoeken">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.9 57.9">
+						<title> zoeken</title>
+						<circle cx="28.9" cy="28.9" r="28.9" fill="#2800A0" />
+						<path d="M37.7 33.9l11.4 11.5 -3.7 3.7L33.9 37.6c-1.3 0.9-2.8 1.6-4.3 2.2 -1.6 0.5-3.2 0.8-4.9 0.8 -2.1 0-4.2-0.4-6.2-1.2 -3.8-1.6-6.8-4.7-8.5-8.5 -1.7-4-1.7-8.4 0-12.4 1.6-3.8 4.7-6.8 8.5-8.5 4-1.7 8.4-1.7 12.4 0 3.8 1.6 6.8 4.7 8.5 8.5 0.8 2 1.3 4.1 1.2 6.2 0 1.7-0.3 3.3-0.8 4.9C39.3 31.1 38.6 32.6 37.7 33.9zM28.9 34.7c2.6-1.1 4.7-3.2 5.8-5.8 1.1-2.7 1.1-5.7 0-8.5 -1.1-2.6-3.2-4.7-5.8-5.8 -2.7-1.1-5.7-1.1-8.4 0 -2.6 1.1-4.7 3.2-5.8 5.8 -1.1 2.7-1.1 5.7 0 8.5 1.1 2.6 3.2 4.7 5.8 5.8C23.2 35.8 26.2 35.8 28.9 34.7L28.9 34.7z" fill="#FFF" />
+					</svg>
+				</a>
+			</li>
+			<li>
+				<a class="tab-control" href="#favorieten">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.9 57.9">
+						<title> favorieten</title>
+						<circle cx="28.9" cy="28.9" r="28.9" fill="#FF3268" />
+						<path d="M42.9 17L42.9 17c-3.5-3.5-9.1-3.5-12.6 0 0 0 0 0 0 0l-1.4 1.4L27.6 17c-3.5-3.5-9.1-3.5-12.6 0 0 0 0 0 0 0l0 0c-3.5 3.5-3.5 9.1 0 12.6 0 0 0 0 0 0l1.4 1.3 12.6 12.6 12.6-12.6 1.4-1.4C46.3 26 46.3 20.4 42.9 17z" fill="#FFF" />
+					</svg>
+				</a>
+			</li>
+		<li>	<img src=images/pluseen.svg alt="plus een" class="heartplusone"></li>
+			<li>
+				<a class="tab-control" href="#lijst">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.9 57.9">
+						<style>
+							.a {
+								fill: #FFF;
+							}
+						</style>
+						<title> lijst</title>
+						<circle cx="28.9" cy="28.9" r="28.9" fill="#00D66C" />
+						<path d="M14.5 25c-2.2 0-3.9 1.8-3.9 3.9s1.8 3.9 3.9 3.9c1 0 2-0.4 2.8-1.1 1.5-1.5 1.5-4 0-5.6C16.6 25.4 15.6 25 14.5 25z" class="a" />
+						<path d="M14.5 14.5c-2.2 0-3.9 1.7-3.9 3.9 0 0 0 0 0 0 0 2.2 1.7 3.9 3.9 3.9 0 0 0 0 0 0 2.2 0 3.9-1.7 3.9-3.9 0 0 0 0 0 0C18.5 16.3 16.7 14.6 14.5 14.5 14.6 14.5 14.6 14.5 14.5 14.5z" class="a" />
+						<path d="M14.5 35.5c-2.2 0-3.9 1.8-3.9 3.9s1.8 3.9 3.9 3.9c1 0 2-0.4 2.8-1.2 1.5-1.5 1.5-4 0-5.6C16.6 35.9 15.6 35.5 14.5 35.5z" class="a" />
+						<path d="M47.1 16c-0.1-0.1-0.3-0.2-0.5-0.2H21.7c-0.4 0-0.6 0.3-0.6 0.7v3.9c0 0.4 0.3 0.6 0.6 0.6h24.9c0.4 0 0.6-0.3 0.7-0.6v-3.9C47.3 16.3 47.2 16.2 47.1 16z" class="a" />
+						<path d="M46.6 26.3H21.7c-0.4 0-0.6 0.3-0.6 0.6v3.9c0 0.4 0.3 0.6 0.6 0.6h24.9c0.3 0 0.6-0.3 0.6-0.6V27C47.2 26.6 46.9 26.3 46.6 26.3L46.6 26.3z" class="a" />
+						<path d="M46.6 36.8H21.7c-0.4 0-0.6 0.3-0.6 0.7v3.9c0 0.4 0.3 0.6 0.6 0.7h24.9c0.4 0 0.6-0.3 0.7-0.7v-3.9C47.2 37.1 47 36.8 46.6 36.8z" class="a" />
+					</svg>
+				</a>
+			</li>
+		</ul>
+		<div class="tab-panel active" id="default"></div>
+		<div class="tab-panel" id="profiel">
+			<ul>
+				<li>
+					<p id="button-login">Log in</p>
+				</li>
+				<li>
+					<p id="button-aanmelden">aanmelden</p>
+				</li>
+				<li>
+					<form action="index.html" id="login" class="form-noshow">
+						<fieldset>
+							<legend>Log in</legend>
+							<label for="naam">Naam</label>
+							<input required type="text" name="naam" id="loginnaam" placeholder="naam">
+							<label for="wachtwoord">Wachtwoord</label>
+							<input required type="password" name="wachtwoord" id="loginwachtwoord" placeholder="wachtwoord">
+
+						</fieldset>
+						<fieldset>
+							<input type="submit" value="Inloggen">
+						</fieldset>
+					</form>
+
+				</li>
+				<li>
+
+					<form action="index.html" id="aanmelden" class="form-noshow">
+						<fieldset>
+							<legend>Aanmelden</legend>
+							<label for="naam">naam</label>
+							<input required type="text" name="naam" id="naam" placeholder="naam">
+							<label for="wachtwoord">wachtwoord</label>
+							<input required type="password" name="wachtwoord" id="wachtwoord" placeholder="wachtwoord">
+							<label for="email">email</label>
+							<input type="email" name="email" id="email" placeholder="email">
+						</fieldset>
+						<fieldset>
+							<legend>Geslacht</legend>
+							<input type="radio" name="geslacht" value="man" id="man">
+							<label for="man">man</label>
+							<input type="radio" name="geslacht" value="vrouw" id="vrouw">
+							<label for="vrouw">vrouw</label>
+							<input type="radio" name="geslacht" value="anders" id="anders">
+							<label for="anders">anders</label>
+							<label for="Geboortedatum">Geboortedatum</label>
+							<input type="date" name="Geboortedatum" id="Geboortedatum" placeholder="DD/MM/YYYY">
+						</fieldset>
+						<fieldset>
+							<legend>Voorkeuren</legend>
+							<input type="checkbox" name="Categorie1" value="Humor" id="Humor">
+							<label for="Humor">Humor</label>
+							<input type="checkbox" name="Categorie2" value="Romantiek" id="Romantiek">
+							<label for="Romantiek">Romantiek</label>
+							<input type="checkbox" name="Categorie3" value="Detective" id="Detective">
+							<label for="Detective">Detective</label>
+							<input type="checkbox" name="Categorie4" value="Thriller" id="Thriller">
+							<label for="Thriller">Thriller</label>
+							<input type="checkbox" name="Categorie5" value="Zombie" id="Zombie">
+							<label for="Zombie">Zombie</label>
+						</fieldset>
+						<fieldset>
+							<input type="submit" value="Aanmelden">
+						</fieldset>
+					</form>
+				</li>
+			</ul>
+		</div>
+		<div class="tab-panel" id="zoeken">
+
+
+			<form action="index.html">
+				<fieldset>
+					<legend>Zoeken</legend>
+					<input type="text" name="search" id="search" placeholder="Zoeken...">
+					<label for="slider">Leestijd (in minuten)</label>
+					<div class="range-slider">
+						<input class="range-slider__range" type="range" value="5" min="1" max="30">
+						<span class="range-slider__value">0</span>
+					</div>
+
+
+				</fieldset>
+				<fieldset>
+					<legend>Voorkeuren</legend>
+					<input type="checkbox" name="Categorie1" value="Humor" id="GenreHumor">
+					<label for="Humor">Humor</label>
+					<input type="checkbox" name="Categorie2" value="Romantiek" id="GenreRomantiek">
+					<label for="Romantiek">Romantiek</label>
+					<input type="checkbox" name="Categorie3" value="Detective" id="GenreDetective">
+					<label for="Detective">Detective</label>
+					<input type="checkbox" name="Categorie4" value="Thriller" id="GenreThriller">
+					<label for="Thriller">Thriller</label>
+					<input type="checkbox" name="Categorie5" value="Zombie" id="GenreZombie">
+					<label for="Zombie">Zombie</label>
+				</fieldset>
+				<fieldset>
+					<input type="submit" value="Zoek">
+				</fieldset>
+
+			</form>
+
+
 
 		</div>
-		<!--sidetab voor mijn menu items-->
-		<div class="nav">
-			<section class="sidebar">
-				<ul class="tab-list">
-					<li class="active">
-						<a class="tab-control" href="#default"></a>
-					</li>
-					<li>
-						<a class="tab-control" href="#profiel">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.9 57.9">
-								<title> profiel</title>
-								<circle cx="28.9" cy="28.9" r="28.9" fill="#FFF" />
-								<path d="M36.8 10.4c4.8 2 8.7 5.9 10.7 10.7 2.1 5 2.1 10.7 0 15.7 -2 4.8-5.9 8.7-10.7 10.7 -5 2.1-10.7 2.1-15.7 0 -4.8-2-8.7-5.9-10.7-10.7 -2.1-5-2.1-10.7 0-15.7 2-4.8 5.9-8.7 10.7-10.7C26.1 8.3 31.8 8.3 36.8 10.4zM33 46c1.3-0.3 2.5-0.8 3.7-1.3 1.2-0.6 2.3-1.3 3.3-2.1 1-0.8 1.9-1.8 2.7-2.8 -0.2-0.1-0.4-0.3-0.7-0.4 -0.2-0.1-0.5-0.2-0.7-0.2l-6.5-1.8L31 41.2c-0.7 0.6-1.4 1.4-2 2.1l-5.9-6 -6.4 1.8c-0.3 0.1-0.5 0.2-0.7 0.3 -0.2 0.1-0.4 0.2-0.6 0.3 0.8 1 1.7 1.9 2.7 2.8 1 0.8 2.1 1.5 3.3 2.1 1.2 0.6 2.4 1 3.7 1.3 1.3 0.3 2.7 0.5 4 0.5C30.3 46.5 31.7 46.3 33 46zM23.5 18.3c-1.6 1.7-2.4 4.1-2 6.4 0.2 2.5 1 4.9 2.4 7 1.7 2.8 5.4 3.7 8.2 2 0.8-0.5 1.5-1.2 2-2 1.4-2.1 2.2-4.4 2.4-6.9 0.6-4.1-2.2-8-6.3-8.7C27.7 15.7 25.2 16.6 23.5 18.3L23.5 18.3z" fill="#00D66C" />
-							</svg>
-						</a>
-					</li>
-					<li>
-						<a class="tab-control" href="#zoeken">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.9 57.9">
-								<title> zoeken</title>
-								<circle cx="28.9" cy="28.9" r="28.9" fill="#2800A0" />
-								<path d="M37.7 33.9l11.4 11.5 -3.7 3.7L33.9 37.6c-1.3 0.9-2.8 1.6-4.3 2.2 -1.6 0.5-3.2 0.8-4.9 0.8 -2.1 0-4.2-0.4-6.2-1.2 -3.8-1.6-6.8-4.7-8.5-8.5 -1.7-4-1.7-8.4 0-12.4 1.6-3.8 4.7-6.8 8.5-8.5 4-1.7 8.4-1.7 12.4 0 3.8 1.6 6.8 4.7 8.5 8.5 0.8 2 1.3 4.1 1.2 6.2 0 1.7-0.3 3.3-0.8 4.9C39.3 31.1 38.6 32.6 37.7 33.9zM28.9 34.7c2.6-1.1 4.7-3.2 5.8-5.8 1.1-2.7 1.1-5.7 0-8.5 -1.1-2.6-3.2-4.7-5.8-5.8 -2.7-1.1-5.7-1.1-8.4 0 -2.6 1.1-4.7 3.2-5.8 5.8 -1.1 2.7-1.1 5.7 0 8.5 1.1 2.6 3.2 4.7 5.8 5.8C23.2 35.8 26.2 35.8 28.9 34.7L28.9 34.7z" fill="#FFF" />
-							</svg>
-						</a>
-					</li>
-					<li>
-						<a class="tab-control" href="#favorieten">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.9 57.9">
-								<title> favorieten</title>
-								<circle cx="28.9" cy="28.9" r="28.9" fill="#FF3268" />
-								<path d="M42.9 17L42.9 17c-3.5-3.5-9.1-3.5-12.6 0 0 0 0 0 0 0l-1.4 1.4L27.6 17c-3.5-3.5-9.1-3.5-12.6 0 0 0 0 0 0 0l0 0c-3.5 3.5-3.5 9.1 0 12.6 0 0 0 0 0 0l1.4 1.3 12.6 12.6 12.6-12.6 1.4-1.4C46.3 26 46.3 20.4 42.9 17z" fill="#FFF" />
-							</svg>
-						</a>
-					</li>
-					<li>
-						<a class="tab-control" href="#lijst">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.9 57.9">
-								<style>
-									.a {
-										fill: #FFF;
-									}
-								</style>
-								<title> lijst</title>
-								<circle cx="28.9" cy="28.9" r="28.9" fill="#00D66C" />
-								<path d="M14.5 25c-2.2 0-3.9 1.8-3.9 3.9s1.8 3.9 3.9 3.9c1 0 2-0.4 2.8-1.1 1.5-1.5 1.5-4 0-5.6C16.6 25.4 15.6 25 14.5 25z" class="a" />
-								<path d="M14.5 14.5c-2.2 0-3.9 1.7-3.9 3.9 0 0 0 0 0 0 0 2.2 1.7 3.9 3.9 3.9 0 0 0 0 0 0 2.2 0 3.9-1.7 3.9-3.9 0 0 0 0 0 0C18.5 16.3 16.7 14.6 14.5 14.5 14.6 14.5 14.6 14.5 14.5 14.5z" class="a" />
-								<path d="M14.5 35.5c-2.2 0-3.9 1.8-3.9 3.9s1.8 3.9 3.9 3.9c1 0 2-0.4 2.8-1.2 1.5-1.5 1.5-4 0-5.6C16.6 35.9 15.6 35.5 14.5 35.5z" class="a" />
-								<path d="M47.1 16c-0.1-0.1-0.3-0.2-0.5-0.2H21.7c-0.4 0-0.6 0.3-0.6 0.7v3.9c0 0.4 0.3 0.6 0.6 0.6h24.9c0.4 0 0.6-0.3 0.7-0.6v-3.9C47.3 16.3 47.2 16.2 47.1 16z" class="a" />
-								<path d="M46.6 26.3H21.7c-0.4 0-0.6 0.3-0.6 0.6v3.9c0 0.4 0.3 0.6 0.6 0.6h24.9c0.3 0 0.6-0.3 0.6-0.6V27C47.2 26.6 46.9 26.3 46.6 26.3L46.6 26.3z" class="a" />
-								<path d="M46.6 36.8H21.7c-0.4 0-0.6 0.3-0.6 0.7v3.9c0 0.4 0.3 0.6 0.6 0.7h24.9c0.4 0 0.6-0.3 0.7-0.7v-3.9C47.2 37.1 47 36.8 46.6 36.8z" class="a" />
-							</svg>
-						</a>
-					</li>
-				</ul>
-				<div class="tab-panel active" id="default">blobb</div>
-				<div class="tab-panel" id="profiel">log in / aanmelden
-					<!--accordion in mijn sidetab om login en aanmelden te laten zien-->
-					<ul class="accordion">
-						<li>
-							<button class="accordion-control">log in</button>
-							<div class="accordion-panel">
-								<form action="index.html">
-									<fieldset>
-										<legend>log in</legend>
-										<label for="naam">naam</label>
-										<input required type="text" name="naam" id="loginnaam" placeholder="naam">
-										<label for="wachtwoord">wachtwoord</label>
-										<input required type="password" name="wachtwoord" id="loginwachtwoord" placeholder="wachtwoord">
+		<div class="tab-panel" id="favorieten">
+			<article>
 
-									</fieldset>
-									<fieldset>
-										<input type="submit" value="Log in">
-									</fieldset>
-								</form>
-							</div>
-						</li>
-						<li></li>
-						<li>
-							<button class="accordion-control">aanmelden</button>
-							<div class="accordion-panel">
-								<section>
-									<h1>Formulierpagina</h1>
-									<form action="index.html">
-										<fieldset>
-											<legend>Aanmelden</legend>
-											<label for="naam">naam</label>
-											<input required type="text" name="naam" id="naam" placeholder="naam">
-											<label for="wachtwoord">wachtwoord</label>
-											<input required type="password" name="wachtwoord" id="wachtwoord" placeholder="wachtwoord">
-											<label for="email">email</label>
-											<input type="email" name="email" id="email" placeholder="email">
-										</fieldset>
-										<fieldset>
-											<legend>Geboortegegevens</legend>
-											<input type="radio" name="geslacht" value="man" id="man">
-											<label for="man">man</label>
-											<input type="radio" name="geslacht" value="vrouw" id="vrouw">
-											<label for="vrouw">vrouw</label>
-											<input type="radio" name="geslacht" value="anders" id="anders">
-											<label for="anders">anders</label>
-											<label for="Geboortedatum">Geboortedatum</label>
-											<input type="date" name="Geboortedatum" id="Geboortedatum" placeholder="DD/MM/YYYY">
-										</fieldset>
-										<fieldset>
-											<legend>Voorkeuren</legend>
-											<input type="checkbox" name="Categorie1" value="Humor" id="Humor">
-											<label for="Humor">Humor</label>
-											<input type="checkbox" name="Categorie2" value="Romantiek" id="Romantiek">
-											<label for="Romantiek">Romantiek</label>
-											<input type="checkbox" name="Categorie3" value="Detective" id="Detective">
-											<label for="Detective">Detective</label>
-											<input type="checkbox" name="Categorie4" value="Thriller" id="Thriller">
-											<label for="Thriller">Thriller</label>
-											<input type="checkbox" name="Categorie5" value="Zombie" id="Zombie">
-											<label for="Zombie">Zombie</label>
-										</fieldset>
-										<fieldset>
-											<input type="submit" value="Log in">
-										</fieldset>
-									</form>
-								</section>
-							</div>
-						</li>
-						<li></li>
-					</ul>
+				<a href="verliefd.html"><img src=images/verliefd.svg alt="verliefd" /></a>
+
+			</article>
+		</div>
+		<div class="tab-panel" id="lijst">
+			<article>
+				<article>
+
+					<a href="verliefd.html">
+
+						<img src=images/verliefd.svg alt="verliefd" />
+
+
+					</a>
+				</article>
+			</article>
+			<article>
+				<a href="hyperbool.html"> <img src=images/hyperbool.svg alt="hyperbool" /></a>
+			</article>
+		</div>
+	</section>
+
+
+	<div class="Mobilenav">
+		<img src="images/pluseentablet.svg" alt="plus een tablet" class="heartplusoneT">
+		<div class="Mobilenav-active btn">
+			<img src="images/menu.svg" alt="profiel">
+			<span class="line"></span>
+		</div>
+		<div class="icons">
+			<div class="rotater">
+				<div class="btn btn-icon">
+					<a href="profiel.html"><img src="images/profiel.svg" alt="profiel">
+					</a>
 				</div>
-				<div class="tab-panel" id="zoeken">zoekformulier</div>
-				<div class="tab-panel" id="favorieten">je favorieten</div>
-				<div class="tab-panel" id="lijst">je lijst items</div>
-			</section>
-		</div>
-
-
-		<div class="menu">
-			<div class="btn trigger">
-				<img src="images/menu.svg" alt="profiel">
-				<span class="line"></span>
 			</div>
-			<div class="icons">
-				<div class="rotater">
-					<div class="btn btn-icon">
-						<a href="profiel.html"><img src="images/profiel.svg" alt="profiel">
-						</a>
-					</div>
+			<div class="rotater">
+				<div class="btn btn-icon">
+					<a href="zoeken.html"><img src="images/zoeken.svg" alt="profiel">
+					</a>
 				</div>
-				<div class="rotater">
-					<div class="btn btn-icon">
-						<a href="zoeken.html"><img src="images/zoeken.svg" alt="profiel">
-						</a>
-					</div>
-				</div>
-				<div class="rotater">
-					<div class="btn btn-icon">
-						<a href="favorieten.html"><img src="images/favorieten.svg" alt="profiel">
-						</a>
-					</div>
-				</div>
-				<div class="rotater">
-					<div class="btn btn-icon">
-						<a href="lijst.html"><img src="images/lijst.svg" alt="profiel">
-						</a>
-					</div>
-				</div>
-
-
 			</div>
+			<div class="rotater">
+				<div class="btn btn-icon">
+					<a href="favorieten.html"><img src="images/favorieten.svg" alt="profiel">
+					</a>
+				</div>
+			</div>
+			<div class="rotater">
+				<div class="btn btn-icon">
+					<a href="lijst.html"><img src="images/lijst.svg" alt="profiel">
+					</a>
+				</div>
+			</div>
+
+
 		</div>
 
-		<!--main content-->
-		<div class="main">
-			<main>
-				<section>
-					<h1>Aanbevolen</h1>
-					<article>
-
-						<img src=images/VERLIEFD.png alt="verliefd" />
-						<h2>Verliefd
-			</h2>
-						<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor. </p>
-						<button>deel</button>
-						<button>favoriet</button>
-						<button>lijst</button>
-						<a href="verhalen/Droom.html">lees verder</a>
-					</article>
-					<article>
-
-						<img src=images/HYPERBOOL.png alt="hyperbool" />
-						<h2>Hyperbool
-			</h2>
-						<p>- ‘Biertje dan maar?’ – ‘Graag.’ – ‘Vermoeiende dag?’ – ‘Nah. Naar de bilbiotheek geweest. Met de bus.’ – ‘Gaat daar een bus naartoe?’ – ‘De bus stopt op het stationsplein.’ – ‘Ah. En vandaar moet je lopen?’ – ‘Ja, ik was met mijn zoon. </p>
-						<button>deel</button>
-						<button>favoriet</button>
-						<button>lijst</button>
-						<a href="verhalen/Verrassing.html">lees verder</a>
-					</article>
-					<article>
-						<img src=images/verrassing.jpeg alt="droom" />
-						<h2>Poepen
-			</h2>
-						<p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit. Centraal Station. Ik duw mijn zoon voort. Hij slaapt.</p>
-						<button>deel</button>
-						<button>favoriet</button>
-						<button>lijst</button>
-						<a href="verhalen/Beroemd.html">lees verder</a>
-					</article>
-				</section>
-			</main>
-		</div>
-		<div class="section">
-			<section>
-				<h1>Voor jou</h1>
-				<article>
-					<h2>Droom</h2>
-					<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</p>
-					<button>deel</button>
-					<button>favoriet</button>
-					<button>lijst</button>
-					<a href="verhalen/Droom.html">lees verder</a>
-				</article>
-				<article class="voorjou">
-					<h2>Droom</h2>
-					<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</p>
-					<button>deel</button>
-					<button>favoriet</button>
-					<button>lijst</button>
-					<a href="verhalen/Droom.html">lees verder</a>
-				</article>
-				<article class="voorjou">
-					<h2>Droom</h2>
-					<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</p>
-					<button>deel</button>
-					<button>favoriet</button>
-					<button>lijst</button>
-					<a href="verhalen/Droom.html">lees verder</a>
-				</article>
-				<article>
-					<h2>Droom</h2>
-					<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</p>
-					<button>deel</button>
-					<button>favoriet</button>
-					<button>lijst</button>
-					<a href="verhalen/Droom.html">lees verder</a>
-				</article>
-				<article>
-					<h2>Droom</h2>
-					<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</p>
-					<button>deel</button>
-					<button>favoriet</button>
-					<button>lijst</button>
-					<a href="verhalen/Droom.html">lees verder</a>
-				</article>
-				<article>
-					<h2>Droom</h2>
-					<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</p>
-					<button>deel</button>
-					<button>favoriet</button>
-					<button>lijst</button>
-					<a href="verhalen/Droom.html">lees verder</a>
-				</article>
-				<article>
-					<h2>Droom</h2>
-					<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</p>
-					<button>deel</button>
-					<button>favoriet</button>
-					<button>lijst</button>
-					<a href="verhalen/Droom.html">lees verder</a>
-				</article>
-				<article>
-					<h2>Droom</h2>
-					<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</p>
-					<button>deel</button>
-					<button>favoriet</button>
-					<button>lijst</button>
-					<a href="verhalen/Droom.html">lees verder</a>
-				</article>
-				<article>
-					<h2>Droom</h2>
-					<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</p>
-					<button>deel</button>
-					<button>favoriet</button>
-					<button>lijst</button>
-					<a href="verhalen/Droom.html">lees verder</a>
-				</article>
-			</section>
-		</div>
 	</div>
+
+	<!--main content-->
+	<main>
+		<section>
+			<h1>Aanbevolen</h1>
+			<article>
+
+				<img src=images/verliefd.svg alt="verliefd" />
+				<h2>Verliefd
+			</h2>
+				<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor. </p><a href="verliefd.html">lees verder</a>
+
+				<svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.2 23.2">
+					<circle class="st0" id="st0" cx="11.6" cy="11.6" r="11.6" />
+					<path class="st1 heartlayer2" id="st1" d="M17.2 6.8L17.2 6.8c-1.4-1.4-3.6-1.4-5 0l-0.6 0.6L11 6.8c-1.4-1.4-3.6-1.4-5 0v0c-1.4 1.4-1.4 3.6 0 5l0.6 0.6 5 5 5-5 0.6-0.6C18.6 10.4 18.6 8.2 17.2 6.8z" />
+				</svg>
+				<a href="/images/verliefdd.png" download>
+					<div class="downloadbutton-active">
+
+						<div class="downloadbutton unselectable">
+							<svg id="arrow" width="14px" height="20px" viewBox="17 14 14 20">
+								<path d="M24,15 L24,32"></path>
+								<polyline points="30 27 24 33 18 27"></polyline>
+							</svg>
+							<svg id="check" width="21px" height="15px" viewBox="13 17 21 15">
+								<polyline points="32.5 18.5 20 31 14.5 25.5"></polyline>
+							</svg>
+							<svg id="border" width="48px" height="48px" viewBox="0 0 48 48">
+								<path d="M24,1 L24,1 L24,1 C36.7025492,1 47,11.2974508 47,24 L47,24 L47,24 C47,36.7025492 36.7025492,47 24,47 L24,47 L24,47 C11.2974508,47 1,36.7025492 1,24 L1,24 L1,24 C1,11.2974508 11.2974508,1 24,1 L24,1 Z"></path>
+							</svg>
+						</div>
+					</div>
+				</a>
+				<!--					<img src="images/deel.png" alt="deelknop" class="deel"/> -->
+			</article>
+			<article>
+
+				<img src=images/hyperbool.svg alt="hyperbool" />
+				<h2>Hyperbool
+			</h2>
+				<p>- ‘Biertje dan maar?’ – ‘Graag.’ – ‘Vermoeiende dag?’ – ‘Nah. Naar de bilbiotheek geweest. Met de bus.’ – ‘Gaat daar een bus naartoe?’ – ‘De bus stopt op het stationsplein.’ – ‘Ah. En vandaar moet je lopen?’ – ‘Ja, ik was met mijn zoon. </p>
+				<a href="hyperbool.html">lees verder</a>
+				<svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.2 23.2">
+					<circle class="st0" id="st0" cx="11.6" cy="11.6" r="11.6" />
+					<path class="st1 heartlayer2" id="st1" d="M17.2 6.8L17.2 6.8c-1.4-1.4-3.6-1.4-5 0l-0.6 0.6L11 6.8c-1.4-1.4-3.6-1.4-5 0v0c-1.4 1.4-1.4 3.6 0 5l0.6 0.6 5 5 5-5 0.6-0.6C18.6 10.4 18.6 8.2 17.2 6.8z" />
+				</svg>
+
+				<div class="downloadbutton-active">
+					<div class="downloadbutton unselectable">
+						<svg id="arrow" width="14px" height="20px" viewBox="17 14 14 20">
+							<path d="M24,15 L24,32"></path>
+							<polyline points="30 27 24 33 18 27"></polyline>
+						</svg>
+						<svg id="check" width="21px" height="15px" viewBox="13 17 21 15">
+							<polyline points="32.5 18.5 20 31 14.5 25.5"></polyline>
+						</svg>
+						<svg id="border" width="48px" height="48px" viewBox="0 0 48 48">
+							<path d="M24,1 L24,1 L24,1 C36.7025492,1 47,11.2974508 47,24 L47,24 L47,24 C47,36.7025492 36.7025492,47 24,47 L24,47 L24,47 C11.2974508,47 1,36.7025492 1,24 L1,24 L1,24 C1,11.2974508 11.2974508,1 24,1 L24,1 Z"></path>
+						</svg>
+					</div>
+				</div>
+			</article>
+			<article>
+				<img src=images/poepen.svg alt="droom" />
+				<h2>Poepen
+			</h2>
+				<p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit. Centraal Station. Ik duw mijn zoon voort. Hij slaapt.</p>
+				<a href="poepen.html">lees verder</a>
+				<svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.2 23.2">
+					<circle class="st0" id="st0" cx="11.6" cy="11.6" r="11.6" />
+					<path class="st1 heartlayer2" id="st1" d="M17.2 6.8L17.2 6.8c-1.4-1.4-3.6-1.4-5 0l-0.6 0.6L11 6.8c-1.4-1.4-3.6-1.4-5 0v0c-1.4 1.4-1.4 3.6 0 5l0.6 0.6 5 5 5-5 0.6-0.6C18.6 10.4 18.6 8.2 17.2 6.8z" />
+				</svg>
+
+				<div class="downloadbutton-active">
+					<div class="downloadbutton unselectable">
+						<svg id="arrow" width="14px" height="20px" viewBox="17 14 14 20">
+							<path d="M24,15 L24,32"></path>
+							<polyline points="30 27 24 33 18 27"></polyline>
+						</svg>
+						<svg id="check" width="21px" height="15px" viewBox="13 17 21 15">
+							<polyline points="32.5 18.5 20 31 14.5 25.5"></polyline>
+						</svg>
+						<svg id="border" width="48px" height="48px" viewBox="0 0 48 48">
+							<path d="M24,1 L24,1 L24,1 C36.7025492,1 47,11.2974508 47,24 L47,24 L47,24 C47,36.7025492 36.7025492,47 24,47 L24,47 L24,47 C11.2974508,47 1,36.7025492 1,24 L1,24 L1,24 C1,11.2974508 11.2974508,1 24,1 L24,1 Z"></path>
+						</svg>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
+	<section class="voorjou">
+		<h1>Voor jou</h1>
+		<article>
+			<h2>Droom</h2>
+			<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</p>
+
+			<a href="verhalen/Droom.html">lees verder</a>
+		</article>
+		<article class="voorjou">
+			<h2>Droom</h2>
+			<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</p>
+			<a href="verhalen/Droom.html">lees verder</a>
+
+		</article>
+		<article class="voorjou">
+			<h2>Droom</h2>
+			<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</p>
+			<a href="verhalen/Droom.html">lees verder</a>
+		</article>
+		<article>
+			<h2>Droom</h2>
+			<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</p>
+			<a href="verhalen/Droom.html">lees verder</a>
+		</article>
+		<article>
+			<h2>Droom</h2>
+			<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</p>
+			<a href="verhalen/Droom.html">lees verder</a>
+
+		</article>
+		<article>
+			<h2>Droom</h2>
+			<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</p>
+			<a href="verhalen/Droom.html">lees verder</a>
+		</article>
+		<article>
+			<h2>Droom</h2>
+			<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</p>
+			<a href="verhalen/Droom.html">lees verder</a>
+	
+		</article>
+		<article>
+			<h2>Droom</h2>
+			<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</p>
+			<a href="verhalen/Droom.html">lees verder</a>
+
+		</article>
+		<article>
+			<h2>Droom</h2>
+			<p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</p>
+			<a href="verhalen/Droom.html">lees verder</a>
+			
+		</article>
+	</section>
+
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-	<script type="text/javascript" src="wat.js"></script>
+	<script type="text/javascript" src="interacties.js"></script>
 </body>
 
 </html>

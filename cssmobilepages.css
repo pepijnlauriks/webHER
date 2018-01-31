@@ -1,0 +1,525 @@
+/*css reset van http://maxdesign.com.au/articles/css-reset 
+/*/
+ html, body, ul, ol, li, form, fieldset, legend {
+     margin: 0;
+     padding: 0;
+}
+ h1, h2, h3, h4, h5, h6, p {
+     margin-top: 0;
+}
+ fieldset, img {
+     border: 0;
+}
+ legend {
+     color: #000;
+}
+ li {
+     list-style: none;
+}
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+}
+ caption, th, td {
+     text-align: left;
+     vertical-align: top;
+     font-weight: normal;
+}
+ input, textarea, select {
+     font-size: 110%;
+     line-height: 1.1;
+}
+ abbr, acronym {
+     border-bottom: .1em dotted;
+     cursor: help;
+}
+/* Fonts */
+ @font-face {
+     font-family: Nexa_Bold;
+     src: url(fonts/Nexa_Bold.otf);
+}
+ @font-face {
+     font-family: Nexa_Light;
+     src: url(fonts/Nexa_Light.otf);
+}
+ @font-face {
+     font-family: Trans_Icons;
+     src: url(fonts/transavicon.ttf);
+}
+/* op alles toegepast */
+ a {
+     text-decoration: none;
+     color: #00D66C;
+}
+ a:hover {
+     color: #2800A0;
+}
+ body {
+     font-family: Nexa_Light;
+}
+/* eerste 2 micro-interacties*/
+ @keyframes rubberBand {
+     from {
+         transform: scale(1, 1, 1);
+    }
+     30% {
+         transform: scale3d(1.15, 0.75, 1);
+    }
+     40% {
+         transform: scale3d(0.75, 1.15, 1);
+    }
+     50% {
+         transform: scale3d(1.1, 0.85, 1);
+    }
+     65% {
+         transform: scale3d(0.95, 1.05, 1);
+    }
+     75% {
+         transform: scale3d(1.05, 0.95, 1);
+    }
+     to {
+         transform: scale3d(1, 1, 1);
+    }
+}
+ @keyframes pulse {
+     from {
+         transform: scale3d(1, 1, 1);
+    }
+     15% {
+         transform: scale3d(1.3, 1.3, 1.3);
+    }
+     30% {
+         transform: scale3d(1, 1, 1);
+    }
+     45% {
+         transform: scale3d(1.3, 1.3, 1.3);
+    }
+     60% {
+         transform: scale3d(1, 1, 1);
+    }
+     75% {
+         transform: scale3d(1.3, 1.3, 1.3);
+    }
+     to {
+         transform: scale3d(1, 1, 1);
+    }
+}
+ @keyframes swing {
+     20% {
+         transform: rotate3d(0, 0, 1, 15deg);
+    }
+     40% {
+         transform: rotate3d(0, 0, 1, -10deg);
+    }
+     60% {
+         transform: rotate3d(0, 0, 1, 5deg);
+    }
+     80% {
+         transform: rotate3d(0, 0, 1, -5deg);
+    }
+     to {
+         transform: rotate3d(0, 0, 1, 0deg);
+    }
+}
+ @keyframes tada {
+     from {
+         transform: scale3d(1, 1, 1);
+    }
+     10%, 20% {
+         transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+     30%, 50%, 70%, 90% {
+         transform: scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, 3deg);
+    }
+     40%, 60%, 80% {
+         transform: scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, -3deg);
+    }
+     to {
+         transform: scale3d(1, 1, 1);
+    }
+}
+ .unselectable {
+     -moz-user-select: -moz-none;
+     -khtml-user-select: none;
+     -webkit-user-select: none;
+     -o-user-select: none;
+     user-select: none;
+} 
+    /* Mobilenav/ 3de microinteractie */
+     .Desktopnavigatie {
+         display: none;
+    }
+     .absolute-center, .Mobilenav, .Mobilenav .btn .fa, .Mobilenav .btn.trigger .line {
+         position: fixed;
+         top: 85%;
+         left: 25%;
+         transform: translateX(-50%) translateY(-50%);
+         color: rgba(255, 255, 255, 1);
+    }
+     .Mobilenav {
+         width: 5em;
+         height: 5em;
+         z-index: 1;
+         border-radius: 50%;
+         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+     .Mobilenav .btn {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         border-radius: 50%;
+         background: rgba(255, 255, 255, 1);
+         opacity: 0;
+         z-index: -10;
+         cursor: pointer;
+         transition: opacity 1s, z-index 0.3s, transform 1s;
+         transform: translateX(0);
+         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+     .Mobilenav .btn.trigger {
+         opacity: 1;
+         z-index: 100;
+         cursor: pointer;
+         transition: transform 0.3s;
+    }
+     .Mobilenav .btn.trigger .line {
+         position: absolute;
+         width: 60%;
+         height: 6px;
+         left: 2.5em;
+         top: 2.6em;
+         background: #fff;
+         border-radius: 6px;
+         transition: background-color 0.3s, height 0.3s, top 0.3s;
+    }
+     .Mobilenav .btn.trigger .line:before, .Mobilenav .btn.trigger .line:after {
+         content: "";
+         display: block;
+         position: absolute;
+         left: 0;
+         width: 100%;
+         height: 6px;
+         background: #fff;
+         border-radius: 6px;
+         transition: background-color 0.3s, transform 0.3s;
+    }
+     .Mobilenav .btn.trigger .line:before {
+         top: -12px;
+         transform-origin: 15% 100%;
+    }
+     .Mobilenav .btn.trigger .line:after {
+         top: 12px;
+         transform-origin: 25% 30%;
+    }
+     .Mobilenav .rotater {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         transform-origin: 50% 50%;
+    }
+     .Mobilenav.active .btn-icon {
+         opacity: 1;
+         z-index: 50;
+    }
+     .Mobilenav.active .trigger .line {
+         height: 0px;
+         top: 45%;
+    }
+     .Mobilenav.active .trigger .line:before {
+         transform: rotate(45deg);
+         width: 110%;
+    }
+     .Mobilenav.active .trigger .line:after {
+         transform: rotate(-45deg);
+         width: 110%;
+    }
+    /* profiel icon */
+     .rotater:nth-child(1) {
+         transform: rotate(-22.5deg);
+    }
+     .Mobilenav.active .rotater:nth-child(1) .btn-icon {
+         transform: translateY(-10em) rotate(22.5deg);
+    }
+    /* zoek icon */
+     .rotater:nth-child(2) {
+         transform: rotate(23.5deg);
+    }
+     .Mobilenav.active .rotater:nth-child(2) .btn-icon {
+         transform: translateY(-10em) rotate(-22.5deg);
+    }
+    /* hart icon*/
+     .rotater:nth-child(3) {
+         transform: rotate(67.5deg);
+    }
+     .Mobilenav.active .rotater:nth-child(3) .btn-icon {
+         transform: translateY(-10em) rotate(-67.5deg);
+    }
+    /* lijst icon*/
+     .rotater:nth-child(4) {
+         transform: rotate(112.5deg);
+    }
+     .Mobilenav.active .rotater:nth-child(4) .btn-icon {
+         transform: translateY(-10em) rotate(-112.5deg);
+	 }
+	.Desktopnavigatie {
+		display: none;
+	}
+	/* Header Header Header Header*/
+	header {
+		width: 100%;
+		border-bottom-style: solid;
+		border-width: 3px;
+		border-color: #00D66C;
+	}
+	nav ul {
+		display: flex;
+		width: 100%;
+		height: 4.21em;
+		justify-content: center;
+	}
+	nav {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+	nav li {
+		text-align: center;
+		font-size: 1.5em;
+		margin-top: 1.5em;
+	}
+	section img {
+		border-radius: 0.5em;
+		max-width: 100%;
+		max-height: 90%;
+	}
+	header img {
+		position: relative;
+		left: 46vw;
+		width: 3em;
+		height: 3em;
+		margin: 0.5em;
+		border-radius: 10em;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	}
+	header ul {
+		width: 100%;
+		height: 4.21em;
+		justify-content: space-around;
+	}
+	header {
+		display: flex;
+		width: 100%;
+		height: 4.21em;
+		font-family: Nexa_Bold;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	}
+	/* Main Main Main Main */
+	main article {
+		margin: 2em;
+		padding: 2em;
+		background: white;
+		border-radius: 0.75em;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	}
+	main section {
+		margin-top: 2em;
+	}
+	main h1 {
+		color: #2800A0;
+		font-family: Nexa_Bold;
+		display: inline-block;
+		position: relative;
+		font-size: 2em;
+		left: 40%;
+	}
+	main h2 {
+		font-family: Nexa_Bold;
+		position: relative;
+		font-size: 1.2em;
+	}
+	/* voorjou voorjou voorjou voorjou */
+	.voorjou h1 {
+		color: #2800A0;
+		font-family: Nexa_Bold;
+		font-size: 2em;
+		position: absolute;
+		font-size: 2em;
+		left: 40%;
+	}
+	.voorjou article {
+		position: relative;
+		display: flex;
+		justify-content: flex-start;
+		margin: 2em;
+		padding: 1.5em;
+		display: inline-block;
+		background: white;
+		border-radius: 0.75em;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+		margin-bottom: -5em;
+		max-width: 35%;
+		border: none;
+		margin-top: 5em;
+	}
+	.voorjou h2 {
+		font-family: Nexa_Bold;
+		font-size: 1.2em;
+		position: relative;
+		width: 6em;
+	}
+	/* Microinteracties Microinteracties Microinteracties Microinteracties*/
+	.downloadbutton-active {
+		display: inline-block;
+		position: relative;
+		left: 55%;
+		background-color: #fff;
+		border-radius: 100px;
+	}
+	.heart {
+		left: 55%;
+		position: relative;
+		width: 3em;
+		height: 3em;
+		cursor: pointer;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+		border-radius: 100px;
+	height: 100%;
+	}
+}
+/* Inloggen en Aanmelden */
+
+@media only screen and (min-width: 15em) {
+		header {
+		width: 100%;
+		border-bottom-style: solid;
+		border-width: 3px;
+		border-color: #00D66C;
+	}
+	nav ul {
+		display: flex;
+		width: 100%;
+		height: 4.21em;
+		justify-content: center;
+	}
+	nav {
+		margin-left: -3.4em;
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+	nav li {
+		text-align: center;
+		font-size: 1.1em;
+		margin-top: 2.5em;
+	}
+	section img {
+		border-radius: 0.5em;
+		max-width: 100%;
+		max-height: 90%;
+	}
+	header img {
+		position: relative;
+		left: 41vw;
+		width: 3em;
+		height: 3em;
+		margin: 0.5em;
+		border-radius: 10em;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	}
+	header ul {
+		width: 100%;
+		height: 4.21em;
+		justify-content: space-around;
+	}
+	header {
+		display: flex;
+		width: 100%;
+		height: 4.21em;
+		font-family: Nexa_Bold;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	}
+	#profiel ul li:nth-child(1) a  {
+	font-family: Nexa_Bold;
+	color: white;
+	margin: 5em;
+		display:inline-block;
+
+}
+
+.voorjou ul li:nth-child(2) a  {
+	font-family: Nexa_Bold;
+	color: white;
+	margin: 3em;
+			display:inline-block;
+
+}
+
+}
+@media only screen and (min-width: 35em) {
+	/* Header Header Header Header*/
+	header {
+		width: 100%;
+		border-bottom-style: solid;
+		border-width: 3px;
+		border-color: #00D66C;
+	}
+	nav ul {
+		display: flex;
+		width: 100%;
+		height: 4.21em;
+		justify-content: center;
+	}
+	nav {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+	nav li {
+		text-align: center;
+		font-size: 1.5em;
+		margin-top: 1.5em;
+	}
+	section img {
+		border-radius: 0.5em;
+		max-width: 100%;
+		max-height: 90%;
+	}
+	header img {
+		position: relative;
+		left: 46vw;
+		width: 3em;
+		height: 3em;
+		margin: 0.5em;
+		border-radius: 10em;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	}
+	header ul {
+		width: 100%;
+		height: 4.21em;
+		justify-content: space-around;
+	}
+	header {
+		display: flex;
+		width: 100%;
+		height: 4.21em;
+		font-family: Nexa_Bold;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	}
+		#profiel ul li:nth-child(1) a  {
+	font-family: Nexa_Bold;
+	color: white;
+	margin: 5em;
+	display:inline-block;
+}
+
+.voorjou ul li:nth-child(2) a  {
+	font-family: Nexa_Bold;
+	color: white;
+	margin: 3em;
+		display:inline-block;
+}
+}

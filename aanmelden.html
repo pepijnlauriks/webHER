@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
 	<meta charset="UTF-8">
-	<title>99verhalen</title>
+	<title>Alle verhalen</title>
 	<link rel="stylesheet" href="main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/png" href="favicon-192x192.png" />
@@ -10,66 +11,107 @@
 </head>
 
 <body>
-	<header>
-		<img src="images/transavia-logo-stacked-white.svg">
-		<nav>
-			<ul>
-				<li><a href="Index.html">Ontdekken</a>
-				</li>
-				<li><a href="Index.html">Alle Verhalen</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+			<header>
+				<img src="images/Transavialogo.svg" alt="Transavia Logo">
+					<nav>	<ul>
+			
+						<li><a href="Index.html">Ontdekken</a>
+						</li>
+						<li><a href="verhalen.html">Alle Verhalen</a>
+						</li>
+					
+					</ul>
+					</nav>
+		
+			</header>
 
-	<ul>
-		<li><a href="formulierpagina.html">Profiel</a></li>
-		<li><a href="Index.html">Zoeken</a></li>
-		<li><a href="Index.html">Favorieten</a></li>
-		<li><a href="Index.html">Mijn Lijst</a></li>
-	</ul>
 
-	<section>
-		<h1>Formulierpagina</h1>
-		<form action="index.html">
-			<fieldset>
-				<legend>Aanmelden</legend>
-				<label for="naam">naam</label>
-				<input required type="text" name="naam" id="naam" placeholder="naam">
-				<label for="wachtwoord">wachtwoord</label>
-				<input required type="password" name="wachtwoord" id="wachtwoord" placeholder="wachtwoord">
-				<label for="email">email</label>
-				<input type="email" name="email" id="email" placeholder="email">
-			</fieldset>
-			<fieldset>
-				<legend>Geboortegegevens</legend>
-				<input type="radio" name="geslacht" value="man" id="man">
-				<label for="man">man</label>
-				<input type="radio" name="geslacht" value="vrouw" id="vrouw">
-				<label for="vrouw">vrouw</label>
-				<input type="radio" name="geslacht" value="anders" id="anders">
-				<label for="anders">anders</label>
-				<label for="Geboortedatum">Geboortedatum</label>
-				<input type="date" name="Geboortedatum" id="Geboortedatum" placeholder="DD/MM/YYYY">
-			</fieldset>
-			<fieldset>
-				<legend>Voorkeuren</legend>
-				<input type="checkbox" name="Categorie1" value="Humor" id="Humor">
-				<label for="Humor">Humor</label>
-				<input type="checkbox" name="Categorie2" value="Romantiek" id="Romantiek">
-				<label for="Romantiek">Romantiek</label>
-				<input type="checkbox" name="Categorie3" value="Detective" id="Detective">
-				<label for="Detective">Detective</label>
-				<input type="checkbox" name="Categorie4" value="Thriller" id="Thriller">
-				<label for="Thriller">Thriller</label>
-				<input type="checkbox" name="Categorie5" value="Zombie" id="Zombie">
-				<label for="Zombie">Zombie</label>
-			</fieldset>
-			<fieldset>
-				<input type="submit" value="Log in">
-			</fieldset>
-		</form>
-	</section>
+		<div class="Mobilenav">
+			<img src="images/pluseentablet.svg" alt="plus een tablet" class="heartplusoneT">
+			<div class="btn trigger">
+				<img src="images/menu.svg" alt="profiel">
+				<span class="line"></span>
+			</div>
+			<div class="icons">
+				<div class="rotater">
+					<div class="btn btn-icon">
+						<a href="profiel.html"><img src="images/profiel.svg" alt="profiel">
+						</a>
+					</div>
+				</div>
+				<div class="rotater">
+					<div class="btn btn-icon">
+						<a href="zoeken.html"><img src="images/zoeken.svg" alt="profiel">
+						</a>
+					</div>
+				</div>
+				<div class="rotater">
+					<div class="btn btn-icon">
+						<a href="favorieten.html"><img src="images/favorieten.svg" alt="profiel">
+						</a>
+					</div>
+				</div>
+				<div class="rotater">
+					<div class="btn btn-icon">
+						<a href="lijst.html"><img src="images/lijst.svg" alt="profiel">
+						</a>
+					</div>
+				</div>
+
+
+			</div>
+		
+	</div>
+	
+		<!--main content-->
+			<main>	
+		
+									<form action="index.html" id="aanmelden">
+										<fieldset>
+											<legend>Aanmelden</legend>
+											<label for="naam">naam</label>
+											<input required type="text" name="naam" id="naam" placeholder="naam">
+											<label for="wachtwoord">wachtwoord</label>
+											<input required type="password" name="wachtwoord" id="wachtwoord" placeholder="wachtwoord">
+											<label for="email">email</label>
+											<input type="email" name="email" id="email" placeholder="email">
+										</fieldset>
+										<fieldset>
+											<legend>Geslacht</legend>
+											<input type="radio" name="geslacht" value="man" id="man">
+											<label for="man">man</label>
+											<input type="radio" name="geslacht" value="vrouw" id="vrouw">
+											<label for="vrouw">vrouw</label>
+											<input type="radio" name="geslacht" value="anders" id="anders">
+											<label for="anders">anders</label>
+											<label for="Geboortedatum">Geboortedatum</label>
+											<input type="date" name="Geboortedatum" id="Geboortedatum" placeholder="DD/MM/YYYY">
+										</fieldset>
+										<fieldset>
+											<legend>Voorkeuren</legend>
+											<input type="checkbox" name="Categorie1" value="Humor" id="Humor">
+											<label for="Humor">Humor</label>
+											<input type="checkbox" name="Categorie2" value="Romantiek" id="Romantiek">
+											<label for="Romantiek">Romantiek</label>
+											<input type="checkbox" name="Categorie3" value="Detective" id="Detective">
+											<label for="Detective">Detective</label>
+											<input type="checkbox" name="Categorie4" value="Thriller" id="Thriller">
+											<label for="Thriller">Thriller</label>
+											<input type="checkbox" name="Categorie5" value="Zombie" id="Zombie">
+											<label for="Zombie">Zombie</label>
+										</fieldset>
+										<fieldset>
+											<input type="submit" value="Aanmelden">
+										</fieldset>
+									</form>
+			</main>
+			<section class="voorjou">
+
+			</section>
+					
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script type="text/javascript" src="interacties.js"></script>
 </body>
 
 </html>
